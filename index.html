@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy Code to Clipboard</title>
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <div class="topic">HTML Code:</div>
+        <textarea class="html" readonly>
+            <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increment & Decrement Number</title>
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <span class="minus">-</span>
+      <span class="num">01</span>
+      <span class="plus">+</span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+        </textarea>
+        <button class="copy-html">Copy Codes</button>
+      </div>
+
+      <div class="box">
+        <div class="topic">CSS Code:</div>
+        <textarea class="css" readonly>
+            /* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #343f4f;
+}
+
+.wrapper {
+  height: 120px;
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper span {
+  font-size: 55px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrapper span.num {
+  font-size: 50px;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+        </textarea>
+        <button class="copy-css">Copy Codes</button>
+      </div>
+
+      <div class="box">
+        <div class="topic">JavaScript Code:</div>
+        <textarea class="js" readonly>
+            /* Created by Tivotal */
+
+            let minus = document.querySelector(".minus");
+            let num = document.querySelector(".num");
+            let plus = document.querySelector(".plus");
+            
+            let i = 1;
+            
+            plus.addEventListener("click", () => {
+              i++;
+              i = i < 10 ? "0" + i : i;
+              num.innerText = i;
+            });
+            
+            minus.addEventListener("click", () => {
+              if (i > 1) {
+                i--;
+                i = i < 10 ? "0" + i : i;
+                num.innerText = i;
+              }
+            });
+        </textarea>
+        <button class="copy-js">Copy Codes</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

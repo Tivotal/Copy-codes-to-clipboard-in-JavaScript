@@ -1,0 +1,95 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #fdfcfc;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+
+.wrapper .box {
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
+}
+
+.wrapper .box .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: #265df2;
+  margin: 4px;
+}
+
+.wrapper .box textarea {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #e7edfe;
+}
+
+.wrapper .box textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper .box button {
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #265df2;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.wrapper .box button:hover {
+  background: #0e4bf1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #265df2;
+  border-radius: 8px;
+}
+
+@media (max-width: 400px) {
+  .wrapper .box button {
+    width: 100%;
+  }
+}
